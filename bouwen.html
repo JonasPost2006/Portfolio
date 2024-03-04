@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Solver Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="image" id="image">
+            
+            <header>
+                <a href="index.html">
+                    <h1>Rubik's Cube Solver Robot</h1>
+                </a>
+            </header>
+        
+            <nav>
+                <a href="ontwerp.html">Ontwerp</a>
+                <a href="bouwen.html" class="active">Bouwen</a>
+                <a href="programmeren.html">Programmeren</a>
+                <a href="media.html">Media</a>
+            </nav>
+            <img class="bgimg" src="images/solderen.jpg" alt="Main image" width="100%">
+            <div class="rounded-box-bouwen">
+                <h3>Bouwen en onderdelen</h3>
+                <p class="bouwen-tekst">
+                    Als alles met de 3D printer is geprint, is het tijd om de robot in elkaar te zetten. Dit ging best gemakkelijk en er waren weinig moeilijkheden.
+                    <br><br>
+                    Na het bouwen zijn we begonnen met de electronica. Denk hierbij aan het aansluiten van de motoren en de drivers, aan de microcomputer die alles aanstuurt. Dit was op verscheidene vlakken een uitdaging omdat wij nog geen ervaring hadden met het aansluiten van motoren en hun drivers.
+                    <br><br>
+                    <b>Materiaal:</b>
+                    <li>Soldeerstation</li>
+                    <li>Kleine tang</li>
+                    <li>Inbussleutels</li>
+                    <li>3D printer</li>
+                    <li>2 componentenlijm</li>
+                    <li>Verschillende moertjes en boutjes - M2.5 & M3</li>
+                    <li>Schroeven</li>
+                    <li>Houten plank</li>
+                    <br>
+                    <b>Onderdelen:</b>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/nl/mechanica-en-actuatoren/motoren/stappenmotoren/stappenmotor-0.41n.m-1.7a-nema17-jst-ph-connector" target="_blank" rel="noopener noreferrer">Nema 17 motoren</a></li>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/nl/mechanica-en-actuatoren/motoraansturingen-en-drivers/stappen-motoraansturingen-en-drivers/tmc2208-motor-driver-module" target="_blank" rel="noopener noreferrer">TMC2208 motor drivers</a></li>
+                    <li><a id="link" href="https://www.drifted.nl/en/set-screw-m3x5mm-6.html" target="_blank" rel="noopener noreferrer">Setscrews (voor de centercaps)</a></li>
+                    <li><a id="link" href="https://www.magnetenspecialist.nl/winkel/schijfmagneten/schijfmagneet-8-x-3-mm/" target="_blank" rel="noopener noreferrer">8x Magneten 8 x 3mm</a></li>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/nl/development-boards/microcontroller-boards/teensy/teensy-4.1" target="_blank" rel="noopener noreferrer">Teensy 4.1</a></li>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/en/power/power-supplies/12v/mean-well-power-supply-12v-12.5a-switching-power-supply-lrs-150-12" target="_blank" rel="noopener noreferrer">Power supply - 12V - 12.5A</a></li>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/nl/kabels-en-connectoren/kabels-en-adapters/jst-compatible/kabel-voor-stappenmotor-4-pin-jst-xh-naar-6-pin-jst-ph-motoraansluiting-60cm" target="_blank" rel="noopener noreferrer">6x Kabels voor motoren</a></li>
+                    <li><a id="link" href="https://www.tinytronics.nl/shop/nl/kabels-en-connectoren/connectoren/jst-compatible/jst-xh-3p-compatible-printplaatconnector-male-90-1-1-1" target="_blank" rel="noopener noreferrer">6x Printplaatconnector voor kabel</a></li>
+                    </p>
+                <img class="fotoaansluitingen" src="images/aansluitingen-drivermotor.webp" alt="aansluitingen-drivermotor">
+                <img class="fotosoldeerbord" src="images/soldeerbord3.png" alt="soldeerbord">
+            </div>
+            <p class="tekstaansluitingen">Schematische tekening van de aansluiting van de motor, drivers en Teensy (i.p.v. Arduino)</p>
+            <p class="tekstsoldeerbord">Ons soldeerbord</p>
+            <div class="rounded-box-bouwen2">
+                <h3>Bouwproces kort uitgelegd</h3>
+                <p class="bouwen-tekst">
+                    <b>Stap 1:</b> 
+                    <br>
+                    Print alle onderdelen uit, en zet ze in elkaar met behulp van de moeren en bouten, magneten voor de bovenkant en schroeven om het in een plank vast te zetten.
+                    <br><br>
+                    <b>Stap 2:</b>
+                    <br>
+                    Test voordat je begint met het solderen van de drivers, eerst of je aansluitingen goed zijn door het op een breadboard te proberen. Als dit werkt, kan je beginnen met alle zes de drivers en hun connectors te solderen op een printplaat.
+                    <br>
+                    <br>
+                    <b>Stap 3:</b>
+                    <br>
+                    Verbind de power supply met de drivers op de printplaat, en soldeer de Teensy vast. Maak de laatste verbindingen zoals op het schema te zien is. Als alles het doet zet je voor de veiligheid de PSU-beschermer vast.
+                    <br><br>
+                    <b>Stap 4:</b>
+                    <br>
+                    Sluit nu je laptop aan en begin met de robot programeren!
+                </p>
+                
+            </div>
+            <img class="fotorobot1zijde" src="images/robot1zijde.JPEG" alt="robot1zijde">
+            <img class="fotorobotnietaf" src="images/robotnietaf.jpg" alt="robotnietaf">
+            <img class="fotooverzicht" src="images/overzicht.JPEG" alt="overzicht">
+            <p class="tekstrobot1zijde">Eén zijde van de robot</p>
+            <p class="tekstrobotnietaf">Bouwen bijna voltooid</p>
+            <p class="tekstoverzicht">Overzicht (zonder PSU beschermer)</p>     
+        </section>
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 Anuar Behari en Jonas Post. All rights reserved.</p>
+    </footer> -->
+</body>
+
+</html>
