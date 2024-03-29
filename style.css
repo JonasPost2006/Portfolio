@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -125,6 +126,8 @@ nav a.active::after {
     color: #ececec;
     position: relative;
     margin-top: 20px;
+    font-size: x-large;
+    line-height: 1.8;
     /* margin-left: auto;
     margin-right: auto; */
     max-width: 40%; 
@@ -144,7 +147,7 @@ nav a.active::after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 190vh;
 }
 
 .project {
@@ -192,6 +195,18 @@ nav a.active::after {
 .cpp {
     max-width: 30%;
     height: auto;
+}
+
+.robotarm {
+    max-width: 45%;
+}
+
+.ai {
+    max-width: 100%;
+}
+
+.rubiks {
+    max-width: 55%;
 }
 
 .half-circle {
